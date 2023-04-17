@@ -2,7 +2,7 @@ package handler
 
 import (
 	"encoding/json"
-	"github.com/Kit0b0y/SkillboxHomeWork/NewSkillbox/Final/pkg/sps"
+	"github.com/github.com/VictoriaNac/GO-final/pkg/sps"
 	"github.com/go-chi/chi/v5"
 	"github.com/spf13/viper"
 	"net/http"

@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/Kit0b0y/SkillboxHomeWork/NewSkillbox/Final/include/handler"
+	"github.com/github.com/VictoriaNac/GO-final/include/handler"
 )
 
 

@@ -15,7 +15,7 @@ type BillingData struct {
 	CheckoutPage   bool `json:"checkout_page"`
 }
 
-// Indexes of billing data
+
 const (
 	BILLING_CREATE_CUSTOMER = iota
 	BILLING_PURCHASE
@@ -25,7 +25,7 @@ const (
 	BILLING_CHECKOUT_PAGE
 )
 
-// GetStatusBilling - gets a list of billing data from a csv file
+
 func GetStatusBilling(csvPath string) (BillingData, error) {
 	file, err := os.Open(csvPath)
 	if err != nil {
@@ -46,8 +46,7 @@ func GetStatusBilling(csvPath string) (BillingData, error) {
 
 }
 
-// parseBilling - handles the bitmask.
-// Distributes the data from the bitmask to BillingData
+
 func parseBilling(mask []byte) BillingData {
 	if len(mask) != 6 {
 		return BillingData{}
